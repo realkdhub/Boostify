@@ -382,13 +382,10 @@ body {
 .header .btn { display: none; }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-block: 25px;
-  transition: padding var(--transition-1);
-  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0; /* Adjust the padding as needed */
 }
 
 .header.active {
@@ -404,9 +401,15 @@ body {
 }
 
 .logo {
-  color: var(--raisin-black-1);
-  font-size: 3.6rem;
-  font-weight: var(--fw-700);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust the margin for spacing */
+}
+
+.logo-img {
+  width: 150px; /* Set the width of the logo image */
+  height: 50px; /* Set the height of the logo image */
 }
 
 .nav-open-btn {
